@@ -1,9 +1,10 @@
-# template-threejs
-## 简介
+# 概述
 
 three.js 项目的模版。
 
-## 运行
+<br />
+
+# 运行
 
 | 描述   | 命令             |
 | ------ | ---------------- |
@@ -12,6 +13,10 @@ three.js 项目的模版。
 | 打包   | `npm run build`  |
 | 部署   | `npm run deploy` |
 
-## 许可
+<br />
 
-本项目遵循 [MIT](https://github.com/jynxio/template-threejs/blob/main/LICENSE)。
+# 许可
+
+本项目遵循 [MIT](https://github.com/jynxio/template-threejs/blob/main/LICENSE) 协议。
+
+<br />
