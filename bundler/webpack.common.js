@@ -1,17 +1,16 @@
-const path = require("path");
-
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require( "path" );
+const HtmlWebpackPlugin = require( "html-webpack-plugin" );
 
 module.exports = {
     entry: "./source/index.js",
     plugins: [
-        new HtmlWebpackPlugin({ title: "" }),
+        new HtmlWebpackPlugin( { title: "" } ),
     ],
     module: {
         rules: [
             {
                 test: /\.css$/i,
-                use: ["style-loader", "css-loader"],
+                use: [ "style-loader", "css-loader" ],
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -29,8 +28,8 @@ module.exports = {
     },
     output: {
         filename: "bundle.js",
-        path: path.resolve(__dirname, "../dist"),
-        clean: true,                               // 清除生成目录。
-        pathinfo: false,                           // 提升构建性能：通过禁止为bundle生成模块的路径信息，以提高垃圾回收的性能，从而提高构建性能。
+        path: path.resolve( __dirname, "../dist" ),
+        clean: true,                                // 清除生成目录。
+        pathinfo: false,                            // 提升构建性能：通过禁止为bundle生成模块的路径信息，以提高垃圾回收的性能，从而提高构建性能。
     },
 };

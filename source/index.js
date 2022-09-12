@@ -1,9 +1,6 @@
 import "/style/reset.css";
-
 import "/style/index.css";
-
 import * as three from "three";
-
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 /* ------------------------------------------------------------------------------------------------------ */
